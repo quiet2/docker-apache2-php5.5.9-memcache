@@ -1,5 +1,7 @@
 docker build --no-cache -t apache2-php5.5.9-memcache .
+
 docker images
+
 docker volume create --name www
 docker volume inspect www
 echo '<?php phpinfo();' > /var/lib/docker/volumes/www/_data/index.php
